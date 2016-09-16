@@ -16,8 +16,19 @@ Phương pháp kiểm thử tốt nhất: Kiểm thử biên mạnh kết hợp 
 
 #Áp dụng kiểm thử
 ##Kiểm thử biên mạnh
-- Test với các giá trị Number.MAX_VALUE + 1, Number.MAX_VALUE, Number.MAX_VALUE - 1
-- Test với các giá trị Number.MIN_VALUE + 1, Number.MIN_VALUE, Number.MIN_VALUE - 1
+- Test với các giá trị Number.MAX_VALUE - 1, Number.MAX_VALUE, Number.MAX_VALUE + 1
+- Test với các giá trị Number.MIN_VALUE - 1, Number.MIN_VALUE, Number.MIN_VALUE + 1
+- Test với giá trị bình thường
+Number.MAX_VALUE = 1.79E+308
+Number.MIN_VALUE = 5e-324
+| Case#| a  | b  | Expected Output
+| -----|--------------|--------------|------------
+|   1  | 2 | Number.MAX_VALUE | 2
+|   2  | 2 | Number.MAX_VALUE-1 | 1
+|   3  | 2 | Number.MAX_VALUE+1 | false
+|   4  | 2 | Number.MIN_VALUE | 2
+|   5  | 2 | Number.MIN_VALUE-1 | false
+|   6  | 2 | Number.MIN_VALUE+1 | 1
 
 ##Kiểm thử tương đương
 Xác định các lớp tương đương
