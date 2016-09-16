@@ -48,3 +48,7 @@ Xác định các lớp tương đương
 | TE2  | 75 | 20 | 5
 | TE3  | 2 | 2 | 2
 | TE4  | '3' | 'abc' | false
+
+#Kết quả của việc áp dụng
+- Kiểm tra được trường hợp cần bắt ngoại lệ (vượt quá kiểu Number), các test case trở lên rõ ràng hơn
+- Giúp chương trình thêm chặt chẽ đầy đủ hơn
