@@ -30,10 +30,11 @@ Khi cố tình nhập vào số vượt quá đoạn [min, max] chương trình 
 | ------|----------------|----------------|------------
 |   1  | 2 | Number.MAX_VALUE | 2
 |   2  | 2 | Number.MAX_VALUE-1 | 1
-|   3  | 2 | Number.MAX_VALUE+1 | false
+|   3  | Number.MAX_VALUE+1 | Number.MAX_VALUE-1 | false
 |   4  | 2 | Number.MIN_VALUE | 2
 |   5  | 2 | Number.MIN_VALUE-1 | false
 |   6  | 2 | Number.MIN_VALUE+1 | 1
+|   6  | 14 | 7                 | 7
 
 ##Kiểm thử tương đương
 Xác định các lớp tương đương
@@ -47,7 +48,7 @@ Xác định các lớp tương đương
 | TE1  | 12 | 16 | 4
 | TE2  | 75 | 20 | 5
 | TE3  | 2 | 2 | 2
-| TE4  | '3' | 'abc' | false
+| TE4  | 3 | 3.2 | false
 
 #Kết quả của việc áp dụng
 - Kiểm tra được trường hợp cần bắt ngoại lệ (vượt quá kiểu Number), các test case trở lên rõ ràng hơn
