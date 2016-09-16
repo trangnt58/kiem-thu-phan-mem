@@ -1,8 +1,12 @@
 #Bài toán
 Tìm ước chung lớn nhất của 2 số
 #Chạy chương trình:
-<b> npm install mocha </b>
-<b> mocha </b>
+```javascript
+npm install mocha 
+```
+```javascript
+mocha 
+```
 
 #Phương pháp kiểm thử
 Phương pháp kiểm thử tốt nhất: Kiểm thử biên mạnh kết hợp kiểm thử lớp tương đương, vì: 
