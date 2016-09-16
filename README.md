@@ -16,24 +16,24 @@ Phương pháp kiểm thử tốt nhất: Kiểm thử biên mạnh kết hợp 
 
 #Áp dụng kiểm thử
 ##Kiểm thử biên mạnh
-- Test với các giá trị Number.MAX_VALUE - 1, Number.MAX_VALUE, Number.MAX_VALUE + 1
-- Test với các giá trị Number.MIN_VALUE - 1, Number.MIN_VALUE, Number.MIN_VALUE + 1
+- Test với các giá trị Number.MAX_SAFE_INTEGER - 1, Number.MAX_SAFE_INTEGER, Number.MAX_SAFE_INTEGER + 1
+- Test với các giá trị Number.MIN_SAFE_INTEGER - 1, Number.MIN_SAFE_INTEGER, Number.MIN_SAFE_INTEGER + 1
 - Test với giá trị bình thường <br>
-Trong Javascript, các giá trị max và min của kiểu Number lần lượt là <br>
+Trong Javascript, các giá trị max và min của kiểu Integer lần lượt là <br>
 ```javascript
-Number.MAX_VALUE = 1.79E+308 
-Number.MIN_VALUE = 5e-324
+Number.MAX_SAFE_INTEGER = 2^53 - 1 
+Number.MIN_SAFE_INTEGER = -(2^53 - 1) 
 ```
 Khi cố tình nhập vào số vượt quá đoạn [min, max] chương trình cần phải trả về false
 
 | Case#| a  | b  | Expected Output
 | ------|----------------|----------------|------------
-|   1  | 2 | Number.MAX_VALUE | 2
-|   2  | 2 | Number.MAX_VALUE-1 | 1
-|   3  | Number.MAX_VALUE+1 | Number.MAX_VALUE-1 | false
-|   4  | 2 | Number.MIN_VALUE | 2
-|   5  | 2 | Number.MIN_VALUE-1 | false
-|   6  | 2 | Number.MIN_VALUE+1 | 1
+|   1  | 2 | Number.MAX_SAFE_INTEGER | 1
+|   2  | 2 | Number.MAX_SAFE_INTEGER-1 | 2
+|   3  | Number.MAX_SAFE_INTEGER | Number.MAX_SAFE_INTEGER | false
+|   4  | 2 | Number.MIN_SAFE_INTEGER | 1
+|   5  | 2 | Number.MIN_SAFE_INTEGER-1 | false
+|   6  | 2 | Number.MIN_SAFE_INTEGER+1 | 2
 |   6  | 14 | 7                 | 7
 
 ##Kiểm thử tương đương
