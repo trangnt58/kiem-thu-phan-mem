@@ -2,6 +2,7 @@
 Tìm ước chung lớn nhất của 2 số a và b
 - Ngôn ngữ: Javascript
 - Testing framework: Mocha
+
 #Chạy chương trình:
 ```javascript
 npm install mocha 
