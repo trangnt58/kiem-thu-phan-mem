@@ -21,8 +21,9 @@ Phương pháp kiểm thử tốt nhất: Kiểm thử biên mạnh kết hợp 
 - Test với giá trị bình thường
 Number.MAX_VALUE = 1.79E+308
 Number.MIN_VALUE = 5e-324
+
 | Case#| a  | b  | Expected Output
-| -----|--------------|--------------|------------
+| ------|----------------|----------------|------------
 |   1  | 2 | Number.MAX_VALUE | 2
 |   2  | 2 | Number.MAX_VALUE-1 | 1
 |   3  | 2 | Number.MAX_VALUE+1 | false
