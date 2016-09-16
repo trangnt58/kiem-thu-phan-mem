@@ -1,4 +1,5 @@
-First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+|         | a          | b | Kết quả mong đợi|
+| ------------- |:-------------:| -----:|
+| TE1      | 12 | 16 | 4|
+| TE2     | 75      |   20 | 5
+| TE3 | 2      |    2 | 2|
