@@ -19,9 +19,9 @@ Phương pháp kiểm thử tốt nhất: Kiểm thử biên mạnh kết hợp 
 - Test với các giá trị Number.MAX_VALUE - 1, Number.MAX_VALUE, Number.MAX_VALUE + 1
 - Test với các giá trị Number.MIN_VALUE - 1, Number.MIN_VALUE, Number.MIN_VALUE + 1
 - Test với giá trị bình thường
-Trong Javascript, các giá trị max và min của kiểu Number lần lượt là
-Number.MAX_VALUE = 1.79E+308
-Number.MIN_VALUE = 5e-324
+Trong Javascript, các giá trị max và min của kiểu Number lần lượt là <br>
+Number.MAX_VALUE = 1.79E+308 <br>
+Number.MIN_VALUE = 5e-324 <br>
 Khi cố tình nhập vào số vượt quá đoạn [min, max] chương trình cần phải trả về false
 
 | Case#| a  | b  | Expected Output
